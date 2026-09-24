@@ -1,0 +1,48 @@
+{% extends 'deck/base.html' %}
+
+{% block title %}Welcome | Mellow Tarot{% endblock %}
+
+{% block content %}
+<div style="max-width: 600px; text-align: center; padding: 20px;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 10px; color: #ffd700;">Mellow Tarot</h1>
+    <p style="font-style: italic; color: #ccc; margin-bottom: 30px;">
+        "As above, so below; as within, so without."
+    </p>
+
+    <div style="background: #16213e; padding: 30px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        <p style="line-height: 1.6; font-size: 1.1rem; color: #fff;">
+            Welcome to an astral space where <strong>yourself meet intuition</strong>. 
+            Mellow Tarot is designed for those seeking a moment of clarity in a fast-paced and chaotic world. 
+            Whether you are looking for a daily reflection or a deep dive into your energy, 
+            the Universe has a message for you.
+        </p>
+        
+        <br>
+        
+        <a href="{% url 'draw_cards' %}" class="btn-primary">
+            LOOK INTO THE ORACLE
+        </a>
+    </div>
+</div>
+
+<style>
+    .btn-primary {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 40px;
+        background: linear-gradient(45deg, #e94560, #950740);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn-primary:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+    }
+</style>
+{% endblock %}

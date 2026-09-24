@@ -1,0 +1,14 @@
+{% extends 'deck/base.html' %}
+
+{% block title %}Logged Out | Mellow Tarot{% endblock %}
+
+{% block content %}
+<div class="card-container" style="text-align: center;">
+    <h2>The Temple Doors Close...</h2>
+    <p>You have successfully logged out. May the energy of the cards always stay with you.</p>
+    
+    <br>
+    <a href="{% url 'login' %}" class="btn-primary">LOG IN AGAIN</a>
+    <a href="{% url 'home' %}" style="display: block; margin-top: 15px; color: #fff; text-decoration: none;">Return Home</a>
+</div>
+{% endblock %}

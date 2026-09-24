@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+tarot/
+.venv/
+venv/
+env/
+
+# Django and local databases
+*.sqlite3
+db.sqlite3
+*.log
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Runtime media uploads; keep the bundled tarot card images
+media/*
+!media/card_images/
+!media/card_images/**
+
+# Generated static files
+staticfiles/
