@@ -1,0 +1,15 @@
+🔮 Mellow Tarot
+
+A web application for interactive tarot readings, built with Python and Django.
+
+🚧 This project is currently under active development.
+
+## Current features
+- Have all 78 cards uploaded
+- It has a page that randomly shows up a card on screen with it's meanings.
+
+## Planned features
+- Complete the Upright and Reversed meanings;
+- Authentication and user login;
+- Tarot diary, with previous readings;
+- Other updates
